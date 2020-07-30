@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class MyAppController {
 	
 	@RequestMapping("/home")
-	
 	public String home() {
 		
 		System.out.println("This is home controller");
 		
 		//need to add tomcat jasper dependency in pom to show jsp file data
-		return "home.jsp";
+		//return "home.jsp"; remove .jsp and add suffix to application properties
+		return "home";
 	}
 
 }
